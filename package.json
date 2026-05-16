@@ -1,20 +1,23 @@
 {
-  "name": "un-common",
-  "private": true,
-  "version": "0.0.0",
-  "description": "Shared Rust crates and TypeScript/Svelte packages for U.N. series Tauri applications.",
-  "license": "MIT",
-  "type": "module",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/usagi/un-common.git"
-  },
-  "workspaces": [
-    "packages/*"
-  ],
-  "scripts": {
-    "build": "npm run build --workspaces --if-present",
-    "check": "npm run check --workspaces --if-present",
-    "clean": "npm run clean --workspaces --if-present"
-  }
+ "name": "@usagi.network/un-common",
+ "private": true,
+ "version": "0.0.0",
+ "description": "Shared Rust crates and TypeScript/Svelte packages for U.N. series Tauri applications.",
+ "license": "MIT",
+ "type": "module",
+ "repository": {
+  "type": "git",
+  "url": "git+https://github.com/usagi/un-common.git"
+ },
+ "workspaces": [
+  "packages/*"
+ ],
+ "publishConfig": {
+  "access": "public"
+ },
+ "scripts": {
+  "build": "npm run build --workspaces --if-present",
+  "check": "npm run check --workspaces --if-present",
+  "clean": "npm run clean --workspaces --if-present"
+ }
 }
