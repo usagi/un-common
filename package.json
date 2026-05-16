@@ -5,6 +5,10 @@
   "description": "Shared Rust crates and TypeScript/Svelte packages for U.N. series Tauri applications.",
   "license": "MIT",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usagi/un-common.git"
+  },
   "workspaces": [
     "packages/*"
   ],
