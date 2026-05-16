@@ -1,7 +1,6 @@
 # un-common
 
-U.N. シリーズアプリ (UN Avatar, UN Motion, 今後追加予定の UN Virtual Eye Tracker
-や UN Virtual Avatar Connect など) の **共通基盤を集約する polyglot monorepo**。
+U.N. シリーズアプリ (U.N. Avatar, U.N. Motion, U.N. Virtual Eye Tracker, U.N. Virtual Avatar Connect など) の **共通基盤を集約する polyglot monorepo**。
 
 Rust crate と TypeScript / Svelte パッケージを 1 つの git repo で管理し、
 それぞれ `Cargo workspace` / `npm workspaces` で参照する。
@@ -43,3 +42,7 @@ npm run build      # tsc -p ...
 ## ライセンス
 
 [MIT](LICENSE)
+
+## 作者
+
+- [usagi / USAGI.NETWORK](https://usagi.network/)
