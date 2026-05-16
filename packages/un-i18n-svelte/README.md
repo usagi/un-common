@@ -61,6 +61,11 @@ UI から locale を切り替える。`svelte-i18n` の `locale` store を更新
 だけのシンプルなラッパー。`AppRuntimeSettings.locale` の永続化は呼び出し側
 で行う想定。
 
+## UN `apps/*-supervisor` での取り込み
+
+- **Rust** (`un-i18n`): `Cargo.toml` で `git = "https://github.com/usagi/un-common.git"` 等（リリースブランチでは `rev` でピン留め推奨）。
+- **npm** (`un-i18n-svelte`): 本ディレクトリで `npm publish --access public` すると、各 Supervisor の `package.json` で `un-i18n-svelte` を通常依存にできる。**npm の git 依存で monorepo のサブフォルダだけを指す指定は環境によって期待どおり動かない**ことがあるため、publish 前はアプリ側に `src/lib/i18n.ts` として本パッケージの `src/index.ts` と同一実装をミラーする運用も可（コメントに同期元 URL を書いておく）。
+
 ## ライセンス
 
 [MIT](../../LICENSE)
